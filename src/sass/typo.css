@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url('~@/assets/fonts/source-sans-pro/source-sans-pro-regular.woff2') format('woff2'),
+    url('~@/assets/fonts/source-sans-pro/source-sans-pro-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+ }
+
+ @font-face {
+    font-family: 'SourceSansPro';
+    src: url('~@/assets/fonts/source-sans-pro/source-sans-pro-bold.woff2') format('woff2'),
+    url('~@/assets/fonts/source-sans-pro/source-sans-pro-bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+ }
+
+ @font-face {
+    font-family: 'overpass';
+    src: url('~@/assets/fonts/overpass/overpass-semibold.woff2') format('woff2'),
+        url('~@/assets/fonts/overpass/overpass-semibold.woff') format('woff');
+        font-weight: 600;
+        font-style: normal;
+}         

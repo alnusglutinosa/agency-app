@@ -1,0 +1,47 @@
+.contact-list
+    color: $white 
+
+    &__item
+        display: flex
+        align-items: center
+
+    &__icon
+        display: flex
+        justify-content: center
+        width: 23px
+        margin-right: 10px
+    
+        +xs
+            display: none
+
+        &--mail > svg
+            width: 24px
+            height: 18px
+
+        &--phone > svg 
+            width: 20px
+            height: 20px
+
+        &--mob > svg
+            width: 16px
+            height: 28px
+
+
+    &__link
+        display: block
+        font-size: 20px
+        line-height: 2.2
+        color: currentColor
+        text-decoration: none
+
+        &:hover,
+        &:focus
+            color: $color-primary
+            outline: none
+        +sm 
+            font-size: 18px
+            line-height: 1.88
+
+        +xs
+            width: 100%
+            text-align: center

@@ -1,0 +1,45 @@
+.user-card
+    display: flex
+    padding-left: 15px
+    padding-right: 15px
+
+    +sm
+        flex-direction: column
+        align-items: center
+
+    &__img
+        width: 27%
+
+        +xs 
+            width: 100%
+            text-align: center
+
+    &__info
+        width: 73%
+        word-break: break-word
+
+        +sm 
+            text-align: center
+
+        +xs 
+            width: 100%
+
+    &__title
+        display: block
+        margin-top: 20px
+        margin-bottom: 6px
+        font-family: 'overpass', 'Arial', sans-serif
+        font-size: 22px
+        text-decoration: none
+        color: $black
+
+        +xs
+            margin-top: 15px
+            margin-bottom: 0
+
+    &__descr
+        display: block
+        font-size: 14px
+        text-decoration: none
+        color: $text-color
+

@@ -1,0 +1,19 @@
+.btn-icon
+    display: block
+    width: 24px
+    height: 20px
+
+    & > svg
+        fill: $color-secondary
+
+        &:hover,
+        &:focus
+            fill: $color-secondary--hover
+
+    &.disabled,
+    &:disabled
+        pointer-events: none
+        text-decoration: none
+
+        & > svg
+            fill: $color-disabled

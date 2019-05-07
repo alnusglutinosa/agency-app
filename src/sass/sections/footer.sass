@@ -1,0 +1,79 @@
+.footer
+    color: $white
+    background-color: $color-secondary
+
+    &__top
+        border-bottom: 1px solid $color-secondary--light
+        padding-top: 24px
+        padding-bottom: 24px
+
+        +xs
+            padding-top: 32px
+            padding-bottom: 30px
+
+    &__container
+        &--top
+            display: flex
+            align-items: center
+            justify-content: space-between
+
+            +xs
+                flex-direction: column
+
+        &--center
+            display: flex
+            justify-content: space-between
+
+        &--bottom
+            display: flex
+            align-items: flex-end
+            justify-content: space-between
+
+            +xs
+                flex-direction: column
+                align-items: center
+                align-items: center
+                justify-content: space-between
+
+    &__center
+        display: flex
+        padding-top: 15px
+        padding-bottom: 15px
+
+    &__bottom
+        display: flex
+        padding-top: 11px
+        padding-bottom: 30px
+
+    &__contact
+        width: 29%
+
+        +xs
+            width: 100%
+
+    &__img-wrap
+        +xs
+            margin-bottom: 12px
+
+    &__category
+        display: flex
+        justify-content: flex-end
+        width: 69%
+        margin-top: 5px
+
+        +xs
+            display: none
+
+    &__center
+        display: flex
+
+    &__social
+        display: flex
+
+        +xs
+            order: -1
+            margin-bottom: 15px
+
+    &__copyright
+        display: block
+        font-size: 12px

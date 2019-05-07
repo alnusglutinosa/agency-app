@@ -1,0 +1,32 @@
+.header
+    z-index: 4
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    background: $white
+
+    &__container
+        display: flex
+        align-items: center
+        justify-content: space-between
+        height: 64px
+
+    &__user-profile
+        display: flex
+        align-items: center
+
+        +sm
+            display: none
+
+    &__logo
+        display: block
+
+    &__nav
+        +sm
+            display: none
+            
+    &__burger
+        display: none
+        +sm
+            display: block

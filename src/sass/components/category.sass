@@ -1,0 +1,25 @@
+.category
+    color: $white
+
+    &__col
+        width: 25%
+        padding-left: 10px
+
+    &__item
+        +xs
+            &:not(:last-child)
+                margin-bottom: 5px
+
+    &__link        
+        display: block
+        color: currentColor
+        font-size: 16px
+        line-height: 1.875
+        text-align: right
+        text-decoration: none
+        transition: color .3s
+
+        &:hover,
+        &:focus
+            color: $color-primary
+            outline: none

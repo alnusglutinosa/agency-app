@@ -1,0 +1,62 @@
+.post
+    &__title
+        display: block
+        margin-bottom: 4px
+        font-family: 'overpass', 'Arial', sans-serif
+        font-size: 26px
+        text-decoration: none
+        color: $black
+
+        +xs
+            margin-bottom: 20px
+            font-size: 22px
+
+        &--mb 
+            +xs
+                margin-bottom: 13px
+
+    &__title-block
+        +xs
+            display: block
+
+    &__img-wrap
+        margin-bottom: 23px
+
+        & > .v-image
+            +xs
+                margin: auto
+
+        +sm 
+            margin-right: 30px
+            margin-left: 15px
+        
+        +xs
+            margin-right: 0
+            margin-left: 0
+            margin-bottom: 14px
+
+    &__descr
+        margin-bottom: 14px
+        padding-left: 2px
+
+        & > p 
+            &:not(:last-child)
+                margin-bottom: 22px
+
+                +sm 
+                    margin-bottom: 30px
+
+                +xs
+                     margin-bottom: 28px
+
+        +sm
+            width: 82%
+            margin-bottom: 24px
+
+        +xs
+            width: 100%
+            margin-bottom: 14px
+
+
+        &--mb0
+            margin-bottom: 0

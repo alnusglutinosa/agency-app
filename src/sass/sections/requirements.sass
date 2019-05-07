@@ -1,0 +1,97 @@
+.requirements 
+    padding-top: 135px
+    padding-bottom: 103px
+    background-color: $color-secondary
+    background-image: url('./assets/imgs/bg-2-2560.jpg')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center center
+
+    &.main-section
+        padding-bottom: 160px
+
+        +sm 
+            padding-bottom: 120px
+    
+        +xs
+            padding-bottom: 70px
+
+    +retina
+        background-image: url('./assets/imgs/bg-2-2560@2x.jpg')
+
+    +md
+        padding-bottom: 155px
+        background-image: url('./assets/imgs/bg-2-1-1920.jpg')
+
+        +retina
+            background-image: url('./assets/imgs/bg-2-1-1920@2x.jpg')
+
+    +sm  
+        padding-bottom: 100px
+        background-image: url('./assets/imgs/bg-2-1-1024.jpg')
+
+        +retina
+            background-image: url('./assets/imgs/bg-2-1-1024@2x.jpg')
+
+    +xs
+        padding-bottom: 50px
+        background-image: url('./assets/imgs/bg-2-1-768.jpg')
+
+        +retina
+            background-image: url('./assets/imgs/bg-2-1-768@2x.jpg')
+
+    +r(320)
+        background-image: url('./assets/imgs/bg-2-1-320.jpg')
+
+        +retina
+            background-image: url('./assets/imgs/bg-2-1-320@2x.jpg')
+
+    &__content
+        display: flex
+
+        +xs
+            flex-direction: column
+            align-items: center
+
+    &__title
+        margin-bottom: 40px
+        
+    &__descr
+        width: 50%
+        padding-right: 10px
+
+        +sm 
+            padding-right: 15px
+
+        +xs
+            width: 100%
+            padding-right: 0
+            text-align: center
+
+        & > p
+            color: $white--dark 
+
+            &:not(:last-child)
+                margin-bottom: 22px
+
+                +xs
+                    margin-bottom: 25px
+
+    &__img-wrap
+        width: 50%
+        margin-top: 4px
+
+        & .v-image
+            margin-left: auto
+            margin-right: auto
+
+            +md
+                margin-right: 0
+
+        +md 
+            margin-top: 15px
+            
+        +xs
+            order: -1
+            width: 77%
+            margin-bottom: 45px

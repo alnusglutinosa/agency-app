@@ -1,0 +1,64 @@
+.relationships 
+    padding-top: 23px
+    padding-bottom: 71px
+
+    &.main-section
+        padding-bottom: 98px
+        padding-top: 126px
+
+        +md
+            padding-bottom: 105px
+
+        +sm 
+            padding-top: 120px
+            padding-bottom: 120px
+    
+        +xs
+            padding-top: 70px
+            padding-bottom: 70px
+
+    &__content
+        display: flex
+        flex-wrap: wrap
+        margin-left: -15px
+        margin-right: -15px
+
+        +sm 
+            flex-direction: column
+
+        +xs
+            flex-direction: column
+            text-align: center
+
+    &__title
+        margin-bottom: 48px
+
+    &__title-block
+        display: block
+
+        +xs
+            display: inline-block
+
+    &__item
+        width: 33.33%
+        margin-bottom: 35px
+        padding-left: 15px
+        padding-right: 15px
+
+        &:last-child
+            +sm
+                margin-bottom: 0
+
+        +sm
+            display: flex
+            width: 100%
+            margin-bottom: 20px
+
+        +xs
+            flex-direction: column
+            margin-bottom: 30px
+
+    &__text-wrap
+        +sm 
+            padding-left: 8px
+            

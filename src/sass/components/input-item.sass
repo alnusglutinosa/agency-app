@@ -1,0 +1,106 @@
+.input-item
+    $this: &
+    position: relative
+    display: block
+    width: 100%
+    height: 56px
+    color: $black
+    background-color: $white
+    border: 1px solid $border-color
+    border-radius: 4px
+
+    &.is-active
+        & > .input-item__text
+            &:not(.input-item__text--file)
+                opacity: 0
+
+    &.is-error
+        color: $color-error
+        border-color: $color-error
+
+        #{$this}__title
+            color: inherit
+
+    &__btn
+        position: absolute
+        top: -1px
+        right: -1px
+        width: 131px
+        height: 100%
+        height: calc(100% + 2px)
+        padding: 0
+
+        +xs
+            width: 55px
+            border-radius: 0 4px 4px 0
+
+    &__title
+        position: absolute
+        top: 0
+        left: 0
+        z-index: 3
+        transform: translateY(-50%)
+        display: inline-block
+        margin-left: 10px
+        padding: 0 6px
+        font-size: 12px
+        white-space: nowrap
+        color: $text-color--light
+        overflow: hidden
+        background: $white
+
+    &__text
+        position: absolute
+        top: 50%
+        left: 0
+        z-index: 1
+        transform: translateY(-50%)
+        padding-left: 16px
+        white-space: nowrap
+        color: $text-color--light
+        overflow: hidden
+        text-overflow: ellipsis
+        transition: opacity 0.3s, color 0.3s
+
+        &--file 
+            width: calc(100% - 130px)
+
+    &__input
+        position: absolute
+        left: 0
+        top: 0
+        z-index: 2
+        width: 100%
+        height: 100%
+        padding: 0 15px
+        color: $black
+        background-color: transparent
+        border: none
+
+        &:focus
+            outline: none
+
+            & + .input-item__text
+                color: $border-color--dark
+
+        &--file 
+            position: absolute
+            font-size: 0
+            left: 0
+            top: 0
+            opacity: 0
+            cursor: pointer
+
+    &--select
+        & > .input-item__text
+            color: $black
+
+        .v-input__slot
+            min-height: auto !important
+            border: none !important
+
+        .v-select__selections
+            padding-top: 0 !important
+
+    &--file
+        cursor: pointer
